@@ -1,0 +1,89 @@
+/* Start Golbal Rules */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* End Golbal Rules */
+body {
+  background: linear-gradient(#200016, #10001f);
+
+  height: 100vh;
+  font-family: system-ui;
+  color: white;
+  transition: 0.3s ease;
+}
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  width: 95%;
+  z-index: 100;
+}
+.logo img {
+  width: 100px;
+  height: 70px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin-right: 30px;
+}
+a {
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: cursive;
+}
+a:hover,
+.active {
+  background-color: #51ebeb73;
+  transition: 0.5s;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background: linear-gradient(to top, #200016, transparent);
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon {
+  mix-blend-mode: screen;
+  transform: translatey(80px);
+}
+
+.aleph {
+  font-size: 25px;
+  text-transform: uppercase;
+  transform: translatey(-140px);
+}
+.content {
+  padding: 30px;
+}
+h1 {
+  margin: 20px;
+}
+p {
+  margin: 20px;
+  font-size: 20px;
+}
+/* When started js */
